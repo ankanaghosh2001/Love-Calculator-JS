@@ -1,0 +1,86 @@
+*{
+    margin: auto;
+    padding: auto;
+}
+
+body{
+    background-image: linear-gradient(#ef87d5, white);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.navbar-brand{
+    margin-left: var(--bs-navbar-brand-margin-start);
+    font-weight: 500;
+}
+
+.container{
+    font-family: "Tilt Neon", sans-serif;
+    font-weight: 550;
+    color: rgb(186, 4, 64);
+}
+
+.inputForm{
+    color: rgb(186, 4, 64);
+    padding-top: 3.5vh;
+    border-radius: 10pt;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Tilt Neon", sans-serif;
+}
+
+#girl{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10pt;
+    padding: 15px 15px;
+    color: rgb(186, 4, 64);
+    font-family: "Tilt Neon", sans-serif;
+    font-weight: 400;
+}
+
+#boy{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10pt;
+    padding: 15px 15px;
+    color: rgb(186, 4, 64);
+    font-family: "Tilt Neon", sans-serif;
+    font-weight: 400;
+}
+
+#submit{
+    margin-top: 20px;
+    font-size: 25px;
+    font-family: "Tilt Neon", sans-serif;
+    width: auto;
+    padding: 15px 15px 15px 15px;
+    color: rgb(186, 4, 64);
+    background-color: bisque;
+    font-weight: bolder;
+    border: 8px;
+    border-radius: 8pt;
+    border-bottom-style: ridge;
+    border-bottom-color: rgb(186, 4, 64);
+    border-right-color: rgb(186, 4, 64);
+    border-right-style: ridge;
+}
+
+#goBack{
+    position: absolute;
+    bottom: 20px; 
+    right: 27px; 
+    font-size: 20px;
+    color: #BA0440; 
+    /* font-weight: bold; */
+    font-family: "Acme",sans-serif;
+}
+
+.result{
+    font-family: "Tilt Neon", sans-serif;
+    color: rgb(186, 4, 64);
+}

@@ -1,0 +1,73 @@
+*{
+    margin: auto;
+    padding: auto;
+}
+
+body{
+    background-image: linear-gradient(#ef87d5, white);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.navbar-brand{
+    margin-left: var(--bs-navbar-brand-margin-start);
+    font-weight: 500;
+}
+
+.navbar-brand:link{
+    color: black;
+}
+
+.navbar-brand:visited{
+    color: black;
+}
+
+
+.container{
+    padding-top: 20vh;
+    margin: auto;
+    color: rgb(186, 4, 64);
+    font-family: "Acme",sans-serif;
+    font-weight: 400;
+    font-size: large;
+    height: 82vh;
+}
+
+.content{
+    padding: 25px;
+    padding-top: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10pt;
+    color: rgb(183, 0, 61);
+}
+
+button{
+    border: none 10pt;
+    font-size: medium;
+    padding: 15px;
+    cursor: pointer;
+    background-color: rgb(186, 4, 64);
+}
+
+.check:link{
+    color: white;
+}
+
+.check:visited{
+    color: white;
+}
+
+.check:hover{
+    color:#ffe0f7;
+}
+
+.mail:link, .mail:visited{
+    color: black;
+}
+
+.mail{
+    text-decoration: none;
+}
