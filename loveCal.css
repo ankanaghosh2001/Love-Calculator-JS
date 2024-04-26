@@ -70,17 +70,18 @@ body{
     border-right-style: ridge;
 }
 
-#goBack{
-    position: absolute;
+
+/* #goBack{
+    position: fixed;
     bottom: 20px; 
     right: 27px; 
     font-size: 20px;
     color: #BA0440; 
-    /* font-weight: bold; */
+    font-weight: bold; 
     font-family: "Acme",sans-serif;
-}
+} */
 
-.result{
+#result{
     font-family: "Tilt Neon", sans-serif;
     color: rgb(186, 4, 64);
 }

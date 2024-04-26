@@ -1,8 +1,10 @@
+let result = document.getElementById("result");
 
-// document.getElementById("submit").addEventListener("click",loveCal);
 document.querySelector("form").addEventListener("submit", function(event) {
     // Prevent the default form submission behavior
     event.preventDefault();
+    result.innerHTML = "";
+
     // Call the loveCal function when the form is submitted
     if(document.getElementById("girl").value === "" || document.getElementById("boy").value === ""){
         alert("Enter the required fields! ");
@@ -12,8 +14,6 @@ document.querySelector("form").addEventListener("submit", function(event) {
     }
 });
 
-let result = document.getElementById("result");
-result.innerHTML = "";
 
 function loveCal(){
     var name1 = document.getElementById("girl").value.toUpperCase();
