@@ -24,51 +24,56 @@ function loveCal(){
     count1 = [];
     count2 = [];
 
+
     for(let i=0;i<name1.length;i++){
-        let count = 0;
-        let flag = 0;
-        for(let j=i;j<name1.length;j++){
-            if(!visited1.includes(name1[i])){
-                if(name1[i] === name1[j]){
-                    count++;
-                    flag = 1;
+        if(name1[i] != " "){
+            let count = 0;
+            let flag = 0;
+            for(let j=i;j<name1.length;j++){
+                if(!visited1.includes(name1[i])){
+                    if(name1[i] === name1[j]){
+                        count++;
+                        flag = 1;
+                    }
                 }
             }
-        }
-        if(flag === 1){
-            visited1.push(name1[i]);
-        }
-        if(count != 0){
-            count1.push(count);
+            if(flag === 1){
+                visited1.push(name1[i]);
+            }
+            if(count != 0){
+                count1.push(count);
+            }
         }
     }
 
     for(let i=0;i<name2.length;i++){
-        let count = 0;
-        let flag = 0;
-        for(let j=i;j<name2.length;j++){
-            if(!visited2.includes(name2[i])){
-                if(name2[i] === name2[j]){
-                    count++;
-                    flag = 1;
+        if(name2[i] != " "){
+            let count = 0;
+            let flag = 0;
+            for(let j=i;j<name2.length;j++){
+                if(!visited2.includes(name2[i])){
+                    if(name2[i] === name2[j]){
+                        count++;
+                        flag = 1;
+                    }
                 }
             }
-        }
-        if(flag === 1){
-            visited2.push(name2[i]);
-        }
-        if(count != 0){
-            count2.push(count);
+            if(flag === 1){
+                visited2.push(name2[i]);
+            }
+            if(count != 0){
+                count2.push(count);
+            }
         }
     }
 
-    let mergedArray = count1.concat(count2);
     let title = document.createElement("h2");
     title.setAttribute("align", "center");
     title.setAttribute("style", "color: #BA0440; font-size:35px; font-weight: bold; font-family: 'Tilt Neon', sans-serif;");
     title.textContent = name1.toUpperCase() + " and " + name2.toUpperCase() + "'s love percentage is: ";
     result.appendChild(title);
 
+    let mergedArray = count1.concat(count2);
     percentageCal(mergedArray);
 }
 
